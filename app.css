@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Global styles */
+  
+  .app-container {
+    display: flex;
+    background-color: #3e3e3e;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .empty-left {
+    flex: 1;
+  }
+  
+  .right-widgets {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* Info Widget Styles */
+  .info-widget {
+    flex: 1;
+    background-color: #2c2c2c;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: #1c1c1c;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .tabs button.active {
+    background-color: #3e3e3e;
+  }
+  
+  .content {
+    background-color: #3e3e3e;
+    padding: 15px;
+    border-radius: 8px;
+    height: 150px;
+    overflow-y: auto;
+  }
+  
+  /* Gallery Widget Styles */
+  .gallery-widget {
+    flex: 1;
+    background-color: #2c2c2c;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gallery-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .add-image {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin: 10px;
+  }
+  
+  .gallery-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .prev {
+    margin: 10px;
+  }
+  
+  .gallery-content img {
+    width: 30%;
+    border-radius: 8px;
+  }
+  
+  .gallery-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .gallery-navigation button {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Responsive design for screens above 768px */
+  @media only screen and (min-width: 768px) {
+    .app-container {
+      padding: 50px;
+    }
+  
+    .right-widgets {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  
+  img {
+    height: 150px;
+    width: 100px;
+  }
+  
+  .btn {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+  }
+  
